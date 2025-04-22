@@ -1,0 +1,6 @@
+# Ignorar todos los archivos .txt y .map
+*.txt
+*.map
+/fonts
+/.vscode
+/sass
