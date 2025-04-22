@@ -118,8 +118,9 @@ btn.addEventListener('click', () => {
   }
 })
 
+// envio de email
 ;(function () {
-  emailjs.init('1kan6LiMjGFsjywo3') // reemplaza con tu ID
+  emailjs.init('1kan6LiMjGFsjywo3') // tu publicKey
 })()
 
 document
@@ -129,10 +130,18 @@ document
 
     emailjs.sendForm('service_ev8eo2k', 'template_4fe1wps', this).then(
       function () {
-        alert('¡Mensaje enviado con éxito!')
+        Swal.fire({
+          title: 'Tu mensaje ha sido enviado con éxito',
+          icon: 'success',
+          draggable: true
+        })
       },
       function (error) {
-        alert('Error al enviar: ' + JSON.stringify(error))
+        Swal.fire({
+          title: 'TError al enviar: ' + JSON.stringify(error),
+          icon: 'error',
+          draggable: true
+        })
       }
     )
   })
