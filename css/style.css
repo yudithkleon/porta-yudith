@@ -1,91 +1,4 @@
-/*
- * Photogenic by FreeHTML5.co
- * URL: https://freehtml5.co
- */
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-}
+
 
 @font-face {
   font-family: "Gotham-Narrow-Book";
@@ -131,11 +44,12 @@ video {
   .container {
     max-width: 1340px;
   }
-}
+} 
+
 :root {
-  --primary: #cd1599;   /* magenta */
-  --secondary: #fbc02d; /* amarillo */
-  --soft-bg: #fff7e0;   /* amarillo muy suave */
+  --primary: #cd1599;   
+  --secondary: #fbc02d; 
+  --soft-bg: #fff7e0;   
   --dark-text: #2b2b2b;
 }
 
@@ -153,11 +67,12 @@ h2::after,
 .fh5co-about-us .owl-carousel1 .owl-dots .active span,
 .read-more,
 .fh5co-news .owl-carousel2 .owl-dots .active span,
-.form-box button {
+.form-box button{
   background-image: -moz-linear-gradient(0deg, #fbc02d 0%, #cd1599 100%);
   background-image: -webkit-linear-gradient(0deg, #fbc02d 0%, #cd1599 100%);
   background-image: -ms-linear-gradient(0deg, #fbc02d 0%, #cd1599 100%);
 }
+
 
 nav.fixed-top {
   padding-top: 0;
@@ -274,21 +189,7 @@ nav.fixed-top {
   display: block;
   position: relative;
 }
-
-.change .bar1 {
-  -webkit-transform: rotate(-42deg) translate(-2px, 6px);
-  transform: rotate(-42deg) translate(-2px, 6px);
-}
-
-.change .bar2 {
-  opacity: 0;
-}
-
-.change .bar3 {
-  -webkit-transform: rotate(46deg) translate(-4px, -8px);
-  transform: rotate(46deg) translate(-4px, -8px);
-}
-
+/* 
 .scroll-button {
   text-align: center;
 }
@@ -317,7 +218,7 @@ nav.fixed-top {
   position: relative;
   cursor: pointer;
   margin-bottom: 20px;
-}
+} */
 
 .social-links {
   width: 430px;
@@ -378,16 +279,6 @@ nav.fixed-top {
 .navbar-collapse.show {
   background: rgba(0, 0, 0, 0.4);
   transition: 0.2s;
-}
-
-.mobile-logo {
-  display: none;
-}
-@media (max-width: 1199px) {
-  .mobile-logo {
-    display: block;
-    margin: 20px 0;
-  }
 }
 
 @media (max-width: 1199px) {
@@ -517,19 +408,6 @@ a {
   text-decoration: none !important;
 }
 
-.read-more {
-  color: #fff !important;
-  font-family: "Larsseit";
-  font-size: 14px;
-  padding: 10px 25px;
-  border-radius: 20px;
-  display: inline-block;
-}
-.read-more:hover {
-  box-shadow: 0px 2px 5px #cccccc;
-  transition: all 0.3s;
-}
-
 .back-bg {
   position: absolute;
   min-height: 600px;
@@ -549,72 +427,6 @@ a {
   }
 }
 
-.fh5co-portfolio {
-  padding-bottom: 0;
-}
-.fh5co-portfolio h3 {
-  font-family: "Larsseit-Medium";
-  color: #1e1f29;
-  text-transform: uppercase;
-  line-height: 1.2;
-  margin: 20px 0;
-}
-.fh5co-portfolio p {
-  max-width: 512px;
-  margin-top: 20px;
-}
-
-.portfolio-tab {
-  background-color: #ffffff;
-  box-shadow: 0px 3px 27px 0px rgba(0, 0, 0, 0.04);
-}
-.portfolio-tab ul {
-  margin-bottom: 30px;
-}
-.portfolio-tab ul li {
-  list-style-type: none;
-  display: inline-block;
-}
-.portfolio-tab ul li a {
-  color: #aeafb9;
-  padding: 15px 5px;
-  font-size: 13px;
-  display: block;
-}
-.portfolio-tab ul li a.active {
-  background-image: linear-gradient(
-    to bottom,
-    rgba(18, 112, 228, 0.071),
-    rgba(18, 112, 228, 0.071),
-    transparent
-  );
-  background-image: -moz-linear-gradient(
-    to bottom,
-    rgba(18, 112, 228, 0.071),
-    rgba(18, 112, 228, 0.071),
-    transparent
-  );
-  background-image: -webkit-linear-gradient(
-    to bottom,
-    rgba(18, 112, 228, 0.071),
-    rgba(18, 112, 228, 0.071),
-    transparent
-  );
-  background-image: -ms-linear-gradient(
-    to bottom,
-    rgba(18, 112, 228, 0.071),
-    rgba(18, 112, 228, 0.071),
-    transparent
-  );
-  border-top: 5px solid #fbc02d;
-  color: #fbc02d;
-}
-
-.portfolioFilter {
-  padding: 15px 0 5px 0;
-  width: 100%;
-}
-
 .fh5co-news h5 a {
     color: #000 !important;
     font-weight: 600;
@@ -625,181 +437,6 @@ a {
     color: #fbc02d !important; 
 }
 
-
-.isotope-item {
-  z-index: 2;
-}
-
-.isotope-hidden.isotope-item {
-  pointer-events: none;
-  z-index: 1;
-}
-
-.isotope,
-.isotope .isotope-item {
-  /* change duration value to whatever you like */
-  -webkit-transition-duration: 0.8s;
-  -moz-transition-duration: 0.8s;
-  transition-duration: 0.8s;
-}
-
-.isotope {
-  -webkit-transition-property: height, width;
-  -moz-transition-property: height, width;
-  transition-property: height, width;
-}
-
-.isotope .isotope-item {
-  -webkit-transition-property: -webkit-transform, opacity;
-  -moz-transition-property: -moz-transform, opacity;
-  transition-property: transform, opacity;
-}
-
-.gallary {
-  width: 25%;
-  padding: 7px;
-}
-.gallary img {
-  width: 100%;
-  height: 600px;
-}
-.gallary img.half-height {
-  height: 293px;
-}
-.gallary .card-img-overlay {
-  transition: all 0.3s;
-  -webkit-transition: all 0.3s;
-  -ms-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  display: none;
-}
-.gallary:hover .card-img-overlay {
-  display: block;
-}
-@media (max-width: 991px) {
-  .gallary {
-    width: 50%;
-  }
-  .gallary img {
-    height: auto;
-  }
-  .gallary img.half-height {
-    height: auto;
-  }
-}
-@media (max-width: 450px) {
-  .gallary {
-    width: 100%;
-  }
-}
-
-.center-img {
-  width: 50%;
-}
-@media (max-width: 450px) {
-  .center-img {
-    width: 100%;
-  }
-}
-
-.top-buttons .img-icon {
-  border-radius: 50%;
-  background-color: white;
-  box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.23);
-  width: 42px;
-  height: 42px;
-  display: block;
-  text-align: center;
-  float: left;
-  margin-right: 10px;
-}
-.top-buttons .img-icon img {
-  height: auto;
-  max-width: 20px;
-  margin-top: 12px;
-}
-.top-buttons .txt {
-  top: 8px;
-  position: relative;
-}
-.top-buttons a {
-  color: #fff;
-  float: left;
-}
-.top-buttons a:nth-child(2) {
-  float: right;
-}
-
-.bottom-buttons {
-  position: absolute;
-  bottom: 20px;
-  display: block !important;
-  left: 20px;
-  right: 20px;
-}
-.bottom-buttons a {
-  font-size: 14.583px;
-  font-family: "Larsseit";
-  background: #ffffff;
-  display: block;
-  padding: 8px 20px 20px 20px;
-  border-radius: 30px;
-  height: 50px;
-}
-.bottom-buttons a .txt {
-  background: -webkit-linear-gradient(left, #fbc02d, #cd1599);
-  background: -ms-linear-gradient(left, #fbc02d, #cd1599);
-  background: -moz-linear-gradient(left, #fbc02d, #cd1599);
-  background: -o-linear-gradient(left, #fbc02d, #cd1599);
-  -webkit-background-clip: text;
-  -ms-background-clip: text;
-  -o-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -ms-text-fill-color: transparent;
-  -o-text-fill-color: transparent;
-}
-.bottom-buttons .img-icon {
-  box-shadow: none;
-  background: transparent;
-  height: auto;
-  width: auto;
-}
-
-.indicators {
-  margin: 50px auto;
-}
-.indicators li {
-  display: inline-block;
-  list-style-type: none;
-  margin: 0 4px;
-}
-.indicators li a {
-  border-radius: 50%;
-  background-color: #ebebeb;
-  width: 16px;
-  height: 16px;
-  display: block;
-}
-.indicators li a.active {
-  border-width: 0.8px;
-  border: 1px solid #fbc02d;
-  border-radius: 50%;
-  height: 20px;
-  width: 20px;
-}
-.indicators li a.active::after {
-  position: absolute;
-  content: "";
-  background-image: -moz-linear-gradient(-11deg, #fbc02d 0%, #cd1599 100%);
-  background-image: -webkit-linear-gradient(-11deg, #fbc02d 0%, #cd1599 100%);
-  background-image: -ms-linear-gradient(-11deg, #fbc02d 0%, #cd1599 100%);
-  height: 10px;
-  width: 10px;
-  border-radius: 50%;
-  margin-top: 4px;
-  margin-left: 4px;
-}
 
 .card {
   border: none;
@@ -1189,3 +826,14 @@ footer.fh5co-footer p b {
 }
 
 
+.btn-CV{
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+  height: 50px;
+  color: white;
+  font-weight: bold;
+  background-image: -moz-linear-gradient(0deg, #fbc02d 0%, #cd1599 100%);
+  background-image: -webkit-linear-gradient(0deg, #fbc02d 0%, #cd1599 100%);
+  background-image: -ms-linear-gradient(0deg, #fbc02d 0%, #cd1599 100%);
+}
