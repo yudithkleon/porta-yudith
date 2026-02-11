@@ -95,7 +95,7 @@ nav.fixed-top {
 }
 .header .carousel-caption {
   bottom: 0;
-  top: 383px;
+  top: 183px;
 }
 .header .frst-hrd {
   font-family: "Gotham-Narrow-Light";
@@ -349,6 +349,7 @@ p {
   display: block;
   background: #ffffff;
   margin: 0 5px;
+  
 }
 .fh5co-about-us .owl-carousel1 .owl-dots .active {
   box-shadow: none;
@@ -513,11 +514,12 @@ a {
 }
 .fh5co-news .owl-carousel2 .owl-prev,
 .fh5co-news .owl-carousel2 .owl-next {
+  margin: 30px;
   font-size: 50px !important;
-  color: #666666;
+  color: #666666 ;
   position: absolute;
   outline: none;
-  background: #f4f5f6 !important;
+  background: linear-gradient(90deg, #fbc02d 0%, #cd1599 100%)!important;
   border-radius: 50%;
   height: 68px;
   width: 68px;
@@ -530,7 +532,7 @@ a {
 .fh5co-news .owl-carousel2 .owl-prev:hover,
 .fh5co-news .owl-carousel2 .owl-next:hover {
   color: #fbc02d;
-  background: #ffffff !important;
+  background: #fbc02d!important;
   box-shadow: 0px 11px 10px 0px rgba(0, 0, 0, 0.07);
 }
 @media (max-width: 767px) {

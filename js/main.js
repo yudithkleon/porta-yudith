@@ -1,7 +1,7 @@
 ;(function () {
   'use strict'
 
-  var carousels = function () {
+  let carousels = function () {
     jQuery('.owl-carousel1').owlCarousel({
       loop: true,
       center: true,
@@ -51,8 +51,8 @@
     })
   }
 
-  var isotope = function () {
-    var $container = $('.portfolioContainer')
+  let isotope = function () {
+    let $container = $('.portfolioContainer')
     $container.isotope({
       filter: '*',
       animationOptions: {
@@ -66,7 +66,7 @@
       $('.portfolioFilter .active').removeClass('active')
       $(this).addClass('active')
 
-      var selector = $(this).attr('data-filter')
+      let selector = $(this).attr('data-filter')
       $container.isotope({
         filter: selector,
         animationOptions: {
@@ -79,7 +79,7 @@
     })
   }
 
-  var navbar = function () {
+  let navbar = function () {
     $(window).scroll(function () {
       $('nav.navbar').offset().top > -70
         ? $('.navbar-fixed-top').addClass('top-nav-collapse')
@@ -87,7 +87,7 @@
     }),
       $(function () {
         $('a.page-scroll').bind('click', function (a) {
-          var o = $(this)
+          let o = $(this)
           $('html, body')
             .stop()
             .animate({ scrollTop: $(o.attr('href')).offset().top - 58 }, 1e3),
