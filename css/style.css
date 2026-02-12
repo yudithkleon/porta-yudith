@@ -839,3 +839,11 @@ footer.fh5co-footer p b {
   background-image: -webkit-linear-gradient(0deg, #fbc02d 0%, #cd1599 100%);
   background-image: -ms-linear-gradient(0deg, #fbc02d 0%, #cd1599 100%);
 }
+
+.video-presentation {
+    background: linear-gradient(to right, #f8f9fa, #ffffff);
+}
+
+.video-presentation h2 {
+    color: #222;
+}
