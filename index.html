@@ -1,675 +1,716 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yudith León — Frontend Engineer</title>
 
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport"
-            content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="stylesheet"
-            href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-            integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
-            crossorigin="anonymous">
-        <link rel="stylesheet" href="owl-carousel/assets/owl.carousel.min.css"
-            type="text/css">
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-            rel="stylesheet">
-        <link rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet" />
 
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/style.css">
+    <!-- Icons -->
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
-        <title>Yudith Leon</title>
-    </head>
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
 
-    <body>
+    <!-- ─── NAVBAR ──────────────────────────────────────────── -->
+    <nav class="navbar">
+      <div class="nav-links">
+        <a href="#proyectos">Proyectos</a>
+        <a href="#mentoria">Mentoría</a>
+        <a href="#about">Sobre mí</a>
+        <div class="nav-divider"></div>
+        <a href="./helps/Ing-de-Software-Yudith-Leon.pdf" target="_blank"
+          class="nav-cta">Descargar CV</a>
+      </div>
+    </nav>
 
-        <div id="fh5co-hero-carousel" class="carousel slide header"
-            data-ride="carousel">
-            <nav class="navbar fixed-top navbar-expand-xl">
-                <div class="container">
-                    <button class="navbar-toggler" data-target="#my-nav"
-                        onclick="myFunction(this)" data-toggle="collapse">
-                        <span class="bar1"></span> <span class="bar2"></span>
-                        <span class="bar3"></span> </button>
+    <!-- ─── HERO ────────────────────────────────────────────── -->
+    <section class="hero">
+      <div class="splash-bg">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+        <div class="blob blob-4"></div>
+        <div class="blob blob-5"></div>
+      </div>
 
-                    <div id="my-nav" class="collapse navbar-collapse">
+      <!-- Foto lado izquierdo -->
+      <div class="hero-photo-wrap reveal">
+        <div class="hero-photo-frame">
+          <div class="photo-blob-bg"></div>
 
-                        <div>
-                            <p class="text-left follow">Sígueme en:</p>
-                            <ul
-                                class="navbar-nav float-left social-links d-flex flex-row gap-3">
-                                <li class="nav-item">
-                                    <a class="nav-link"
-                                        href="https://github.com/leonyudithk"
-                                        target="_blank"
-                                        rel="noopener noreferrer">
-                                        <i class="fab fa-github fa-2x"></i>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link"
-                                        href="https://www.linkedin.com/in/yudithkleon/"
-                                        target="_blank"
-                                        rel="noopener noreferrer">
-                                        <i class="fab fa-linkedin fa-2x"></i>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link"
-                                        href="mailto:leonyudithk@gmail.com">
-                                        <i
-                                            class="fas fa-envelope fa-2x text-white"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
+          <!-- REEMPLAZA esta línea con tu imagen: -->
+          <img class="hero-photo"
+            src="https://res.cloudinary.com/danimel/image/upload/v1773448040/Yudith-Leon_eoq8kd.png"
+            alt="Yudith León">
 
-                        <ul class="navbar-nav mx-auto logo-desktop">
-                            <li class="nav-item active">
+          <div class="float-tag t1">⚛️ React + TypeScript</div>
+          <div class="float-tag t2">🧪 QA & Testing</div>
+          <div class="float-tag t3">🎓 Mentora Técnica</div>
+          <div class="float-tag t4">☕ Java + Spring Boot</div>
+          <div class="float-tag t5">🏗️ TOGAF & Arquitectura</div>
+        </div>
+      </div>
 
-                            </li>
-                        </ul>
+      <!-- Contenido lado derecho -->
+      <div class="hero-content reveal">
+        <div class="hero-eyebrow">
+          <span class="eyebrow-dot"></span>
+          Ingeniera de Sistemas
+        </div>
+        <h1 class="hero-name">
+          Yudith León
+        </h1>
+        <div class="hero-roles">
+          <span class="role-pill r1">Frontend Engineer</span>
+          <span class="role-pill r2">Technical Mentor</span>
+          <span class="role-pill r3">QA Specialist</span>
+        </div>
+        <p class="hero-desc">
+          Construyo aplicaciones web <strong>escalables</strong> y formo talento
+          tecnológico listo para la industria. 4+ años creando productos con
+          <strong>React, TypeScript</strong> y arquitectura modular.
+        </p>
+        <div class="hero-actions">
+          <a href="#proyectos" class="btn-primary">Ver Proyectos</a>
+          <a href="./helps/Ing-de-Software-Yudith-Leon.pdf" target="_blank"
+            class="btn-secondary" download>Descargar CV</a>
+          <a href="https://github.com/yudithkleon" target="_blank"
+            class="btn-icon">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/yudithkleon/" target="_blank"
+            class="btn-icon">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+    </section>
 
-                        <ul class="navbar-nav float-right menu-links">
-                            <li class="nav-item">
-                                <a class="nav-link active" href="#">Inicio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#about-us">Sobre
-                                    mí</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link"
-                                    href="#portafolio">Portafolio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link"
-                                    href="#contact">Contactame</a>
-                            </li>
-
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-
-                    <img class="d-block w-100 home-bg"
-                        src="./images/imagen1.jpg">
-
-                    <div class="carousel-caption d-md-block">
-                        <p class="frst-hrd">Ingeniera de Sistemas</p>
-                        <h5>Desarrolladora Full Stack</h5>
-
-                    </div>
-
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100 home-bg"
-                        src="images/descarga (43).jpg">
-
-                    <div class="carousel-caption d-md-block">
-                        <p class="frst-hrd">Ingeniera de Sistemas</p>
-                        <h5>Desarrolladora Full Stack</h5>
-
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100 home-bg"
-                        src="images/imagen3.jpg">
-
-                    <div class="carousel-caption d-md-block">
-                        <p class="frst-hrd">Ingeniera de Sistemas</p>
-                        <h5>Desarrolladora Full Stack</h5>
-
-                    </div>
-                </div>
-
-            </div>
-
+    <!-- ─── IMPACTO PROFESIONAL ──────────────────────────────── -->
+    <div class="impact-bar reveal">
+      <h2><span class="spark">✦</span> Mi Impacto Profesional <span
+          class="spark">✦</span></h2>
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-number">200+</div>
+          <div class="stat-label">Estudiantes Formados</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">40+</div>
+          <div class="stat-label">Proyectos Guiados</div>
         </div>
 
-       
-        <div class="container-fluid fh5co-about-us" id="about-us">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4">
-
-                        <svg class="back-bg" viewBox="0 0 535 618">
-                            <defs>
-                                <lineargradient id="PSgrad_0" x1="0%" x2="100%"
-                                    y1="0%" y2="0%">
-                                    <stop offset="0%" stop-color="#fbc02d"
-                                        stop-opacity="1" />
-                                    <stop offset="100%" stop-color="#fff599"
-                                        stop-opacity="1" />
-                                </lineargradient>
-
-                            </defs>
-                            <path fill-rule="evenodd" fill#fbc02d
-                                d="M6.000,-0.000 L499.000,-0.000 C502.314,-0.000 505.000,2.686 505.000,6.000 L505.000,612.000 C505.000,615.314 502.314,618.000 499.000,618.000 L6.000,618.000 C2.686,618.000 -0.000,615.314 -0.000,612.000 L-0.000,6.000 C-0.000,2.686 2.686,-0.000 6.000,-0.000 Z" />
-                            <path fill="url(#PSgrad_0)"
-                                d="M6.000,-0.000 L499.000,-0.000 C502.314,-0.000 505.000,2.686 505.000,6.000 L505.000,612.000 C505.000,615.314 502.314,618.000 499.000,618.000 L6.000,618.000 C2.686,618.000 -0.000,615.314 -0.000,612.000 L-0.000,6.000 C-0.000,2.686 2.686,-0.000 6.000,-0.000 Z" />
-                        </svg>
-
-                        <div class="owl-carousel owl-carousel1 owl-theme">
-                            <div>
-                                <img src="images/Yudith 2 - copia.jpg" alt
-                                    class="img-fluid" height />
-                            </div>
-                            <div>
-                                <img src="images/YudithGoyn - copia.jpg" alt
-                                    class="img-fluid" />
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="col-lg-8" id="about-us">
-                        <div class="about-us-content">
-                            <h2>Sobre mí</h2>
-
-                            <!-- <p style="text-align: justify; line-height: 1.8;">
-                                Desarrolladora <strong>Full Stack</strong> con
-                                formación en
-                                <strong>Ingeniería de Sistemas</strong> y más de
-                                <strong>4 años de experiencia</strong> creando
-                                aplicaciones web modernas,
-                                escalables y orientadas a la experiencia del
-                                usuario.
-                            </p>
-
-                            <p style="text-align: justify; line-height: 1.8;">
-                                Me especializo en el desarrollo frontend con
-                                <strong>React, TypeScript, React Query, Zustand,
-                                    Redux Toolkit y Redux Saga</strong>,
-                                aplicando buenas prácticas de arquitectura,
-                                gestión de estado y consumo
-                                eficiente de <strong>APIs REST</strong>.
-                            </p>
-
-                            <p style="text-align: justify; line-height: 1.8;">
-                                Cuento con sólida experiencia en <strong>testing
-                                    manual y automatizado</strong>
-                                utilizando <strong>Cypress, Jest, Vitest y React
-                                    Testing Library</strong>,
-                                asegurando calidad, estabilidad y mantenibilidad
-                                del software.
-                            </p>
-
-                            <p style="text-align: justify; line-height: 1.8;">
-                                A nivel backend, he trabajado con
-                                <strong>Java</strong> y <strong>PHP</strong>,
-                                desarrollando e integrando servicios,
-                                gestionando bases de datos
-                                <strong>MySQL</strong> y utilizando entornos
-                                como <strong>XAMPP</strong> y
-                                herramientas como <strong>IntelliJ IDEA</strong>
-                                y <strong>Java Swing</strong>.
-                            </p>
-
-                            <p style="text-align: justify; line-height: 1.8;">
-                                Tengo experiencia utilizando
-                                <strong>Azure</strong> en entornos de desarrollo
-                                y despliegue, así como en la integración de
-                                servicios y gestión de proyectos
-                                bajo metodologías <strong>Agile /
-                                    Scrum</strong>, trabajando con equipos
-                                multidisciplinarios en contextos nacionales e
-                                internacionales.
-                            </p>
-
-                            <p style="text-align: justify; line-height: 1.8;">
-                                Además, he desempeñado el rol de <strong>mentora
-                                    técnica</strong>, guiando
-                                desarrolladores en formación, liderando procesos
-                                de aprendizaje y fortaleciendo
-                                habilidades en desarrollo frontend y full stack
-                                moderno.
-                            </p>
-
-                            <p style="text-align: justify; line-height: 1.8;">
-                                Actualmente, estoy abierta a nuevas
-                                oportunidades como
-                                <strong>Desarrolladora Full Stack, Frontend
-                                    Senior o Mentora Técnica</strong>,
-                                donde pueda aportar valor, liderazgo técnico y
-                                una visión orientada a la calidad
-                                del software.
-                            </p> -->
-                            <p style="text-align: justify; line-height: 1.8;">
-                                Ingeniera de Sistemas y Desarrolladora Full
-                                Stack con enfoque Frontend, 4+ años creando
-                                aplicaciones web modernas, escalables y
-                                orientadas a experiencia de usuario y calidad.
-                            </p>
-
-                            <p style="text-align: justify; line-height: 1.8;">
-                                Especialista en React y TypeScript, con gestión
-                                de estado en Redux Toolkit, Zustand y React
-                                Query. Enfoque en performance, arquitectura
-                                modular y buenas prácticas.
-                            </p>
-
-                            <p style="text-align: justify; line-height: 1.8;">
-                                Backend con Java y Spring Boot, integración de
-                                APIs REST y trabajo con MySQL y Firebase. QA con
-                                Cypress, Jest y Vitest; gestión ágil y de
-                                incidencias en Azure Boards.
-                            </p>
-
-                            <p style="text-align: justify; line-height: 1.8;">
-                                Mentora Técnica: formación en React, Git,
-                                consumo de APIs y testing en proyectos reales.
-                            </p>
-
-                            <p style="text-align: justify; line-height: 1.8;">
-                                Abierta a oportunidades como Frontend / Full
-                                Stack Developer o Mentora Técnica, aportando
-                                liderazgo técnico e impacto en producto.
-                            </p>
-                            <div class="cv-actions">
-                                <a
-                                    href="./images/FullStack Yudith Leon.pdf"
-                                    target="_blank"
-                                    class="btn-CV"
-                                    download>
-                                    Ver / Descargar CV
-
-                                </a>
-                            </div>
-
-                        </div>
-
-                    </div>
-                </div>
-            </div>
+        <div class="stat-card">
+          <div class="stat-number">10+</div>
+          <div class="stat-label">Cohortes Lideradas</div>
         </div>
- <div>
-            <section class="video-presentation py-5 bg-light">
-                <div class="container text-center">
-                    <h2 class="fw-bold mb-4">Video de Presentación
-                       </h2>
-                    <p class="mb-4"
-                        style="max-width: 700px; margin: 0 auto;">
-                        En este video comparto brevemente mi
-                        experiencia como desarrolladora
-                        Full Stack, mi enfoque en arquitectura
-                        frontend, testing y cómo aporto valor en
-                        equipos ágiles.
-                    </p>
+        <div class="stat-card">
+          <div class="stat-number">4+</div>
+          <div class="stat-label">Años en proyectos reales nacionales e
+            internacionales</div>
+        </div>
+      </div>
+    </div>
 
-                    <section class="video-presentation py-4">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-md-8 col-lg-6">
+    <!-- ─── PROYECTOS ────────────────────────────────────────── -->
+    <section class="section projects-section" id="proyectos">
+      <div class="section-header reveal">
+        <h2><span class="spark">✦</span> Proyectos <span
+            class="accent">Destacados</span> <span class="spark">✦</span></h2>
+        <p>Selección de proyectos reales con impacto medible</p>
+      </div>
 
-                                    <div
-                                        class="ratio ratio-16x9 shadow rounded">
-                                        <iframe
-                                            src="https://www.youtube.com/embed/rrHS3wwFkqM"
-                                            loading="lazy"
-                                            title="Video de presentación"
-                                            frameborder="0"
-                                            allowfullscreen>
-                                        </iframe>
-                                    </div>
+      <div class="filter-tabs reveal">
+        <button class="tab-btn active" data-filter="all">Todos</button>
+        <button class="tab-btn" data-filter="Frontend">Frontend</button>
+        <button class="tab-btn" data-filter="Backend">Backend</button>
+        <button class="tab-btn" data-filter="Cypress">QA</button>
+        <button class="tab-btn" data-filter="Mentoría">Mentoría</button>
+      </div>
 
-                                </div>
-                            </div>
-                        </div>
-                    </section>
+      <div class="projects-grid" id="projects-grid">
 
-                </div>
-            </section>
-
+        <div class="project-card reveal" data-category="Frontend">
+          <div class="project-thumb">
+            <img src="./helps/images/spa.JPG" alt="Spa y Relax"
+              onerror="this.parentElement.innerHTML='🧖‍♀️'">
+          </div>
+          <div class="project-body">
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="project-tag fe">Frontend</span>
+                <span class="project-tag be">React + Vite</span>
+                <span class="project-tag qa">Redux</span>
+                <span class="project-tag fi">Firebase</span>
+                <span class="project-tag ui">Material UI</span>
+              </div>
+              <div class="project-title">Spa y Relax</div>
+              <p class="project-desc">
+                Plataforma web full stack para centro de bienestar con panel de
+                administración,
+                autenticación de usuarios y gestión de contenido en tiempo real.
+              </p>
+              <ul class="project-highlights">
+                <li>Panel admin con carrusel, servicios y galería gestionados
+                  desde Firestore</li>
+                <li>Autenticación y rutas privadas con Firebase Auth + React
+                  Router</li>
+                <li>Estado global con Redux y arquitectura modular por
+                  features</li>
+                <li>UI responsive con Material UI y alertas con SweetAlert2</li>
+              </ul>
+            </div>
+            <div class="project-actions">
+              <a href="https://equilibrio-yl.vercel.app/" target="_blank"
+                class="btn-sm primary">Ver Proyecto</a>
+              <a href="https://github.com/yudithkleon/equilibrio-yl"
+                target="_blank"
+                class="btn-sm">Ver Código</a>
+            </div>
+          </div>
         </div>
 
-        <section class="tools-section py-5">
-            <div class="container">
-                <h2 class="text-center fw-bold mb-5 gradient-title">
-                    Tecnologías y herramientas
-                </h2>
+        <div class="project-card reveal" data-category="Cypress">
 
-                <div class="row g-4">
-                    <!-- Card -->
-                    <div class="col-md-6 col-lg-4">
-                        <div class="tool-card">
-                            <h5>Frontend & State Management</h5>
-                            <div class="tool-tags">
-                                <span>Html</span>
-                                <span>React</span>
-                                <span>TypeScript</span>
-                                <span>JavaScript</span>
-                                <span>Redux Toolkit</span>
-                                <span>Redux Saga</span>
-                                <span>React Query</span>
-                                <span>Zustand</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Testing -->
-                    <div class="col-md-6 col-lg-4">
-                        <div class="tool-card">
-                            <h5>Testing</h5>
-                            <div class="tool-tags">
-                                <span>Jest</span>
-                                <span>Vitest</span>
-                                <span>React Testing Library</span>
-                                <span>Cypress</span>
-                                <span>Mocha</span>
-                                <span>Chai</span>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Backend -->
-                    <div class="col-md-6 col-lg-4">
-                        <div class="tool-card">
-                            <h5>Backend & Bases de Datos</h5>
-                            <div class="tool-tags">
-                                <span>Java</span>
-                                <span>Spring Boot</span>
-                                <span>REST APIs</span>
-                                <span>MySQL</span>
-                                <span>Firebase</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Cloud -->
-                    <div class="col-md-6 col-lg-4">
-                        <div class="tool-card">
-                            <h5>Cloud & Control de versiones</h5>
-                            <div class="tool-tags">
-                                <span>Azure</span>
-                                <span>Git</span>
-                                <span>GitHub</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Diseño -->
-                    <div class="col-md-6 col-lg-4">
-                        <div class="tool-card">
-                            <h5>Diseño & Arquitectura</h5>
-                            <div class="tool-tags">
-                                <span>Figma</span>
-                                <span>UML</span>
-                                <span>BPMN</span>
-                                <span>Enterprise Architect</span>
-                                <span>TOGAF 9.2</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="tool-card">
-                            <h5>UI / Styling & Component Libraries</h5>
-                            <div class="tool-tags">
-                                <span>CSS</span>
-                                <span>Sass</span>
-                                <span>Styled Components</span>
-                                <span>Tailwind CSS</span>
-                                <span>Bootstrap</span>
-                                <span>React-Bootstrap</span>
-                                <span>Material UI</span>
-                                <span>Ant Design</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6 col-lg-4">
-                        <div class="tool-card">
-                            <h5>Gestión de proyectos & Metodologías</h5>
-                            <div class="tool-tags">
-                                <span>Scrum</span>
-                                <span>Agile</span>
-                                <span>Trello</span>
-                                <span>Kanban</span>
-                                <span>Design Thinking</span>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
+          <!-- Modal de video (oculto por defecto) -->
+          <div class="video-modal" id="modal-ruralApps">
+            <div class="video-modal-inner">
+              <button class="video-modal-close"
+                onclick="closeVideoModal('ruralApps')">✕</button>
+              <video
+                id="video-ruralApps"
+                controls
+                playsinline
+                style="width:100%; border-radius: 10px;">
+                <source src="./helps/images/RuralApp.mp4" type="video/mp4">
+                Tu navegador no soporta video HTML5.
+              </video>
             </div>
-        </section>
+          </div>
 
-        <div class="container-fluid fh5co-news" id="portafolio">
-            <h2>Mi Portafolio</h2>
-            <div class="container">
-
-                <div class="row">
-                    <div class="owl-carousel owl-carousel2 owl-theme">
-                        <div>
-                            <div class="card text-center">
-                                <img
-                                    class="card-img-top"
-                                    src="./images/spa.JPG"
-                                    alt>
-                                <div
-                                    class="card-body text-left pr-0 pl-0">
-                                    <h5 style="text-align: center;"><a
-                                            href="https://equilibrio-yl.vercel.app/">Spa
-                                            y
-                                            Relax! </a></h5>
-                                    <p class="card-text"
-                                        style="text-align: justify;">
-                                        Centro de bienestar enfocado en
-                                        equilibrio cuerpo–mente. Ofrece
-                                        servicios de uñas, masajes, terapias
-                                        físicas, yoga y meditación, con una
-                                        experiencia visual cuidada y orientada a
-                                        la calma y el bienestar integral.
-                                    </p>
-
-                                </div>
-                            </div>
-                        </div>
-
-                        <div>
-                            <div class="card text-center"> <img
-                                    class="card-img-top"
-                                    src="./images/ruralApps.jpg"
-                                    alt>
-                                <div
-                                    class="card-body text-left pr-0 pl-0">
-                                    <h5 style="text-align: center;"><a
-                                            href="https://frontend-ruralapps-67779491282.us-east4.run.app/">RuralApps</a></h5>
-                                    <p class="card-text"
-                                        style="text-align: justify;">
-                                        Plataforma que facilita la comunicación
-                                        entre organizaciones y usuarios a través
-                                        de dispositivos Android, incluso con
-                                        conectividad mínima (2G), sin necesidad
-                                        de planes de datos ni SMS.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="card text-center"> <img
-                                    class="card-img-top"
-                                    src="./images/TOGAF.png"
-                                    alt>
-                                <div
-                                    class="card-body text-left pr-0 pl-0">
-                                    <h5 style="text-align: center;"><a
-                                            href="https://bmm-modelado-adm-togaf-yudithleon.netlify.app/">Modelado
-                                            de TOGAF 9.2! </a></h5>
-                                    <p class="card-text"
-                                        style="text-align: justify;">
-                                        Modelado de negocios bajo el estándar
-                                        ADM TOGAF 9.2, aplicando el método BMM.
-                                        Incluye análisis de fases, artefactos,
-                                        actores y diagramas de procesos
-                                        desarrollados en Enterprise Architect.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div>
-                            <div class="card text-center"> <img
-                                    class="card-img-top"
-                                    src="./images/restaurant.JPG"
-                                    alt>
-                                <div
-                                    class="card-body text-left pr-0 pl-0">
-                                    <h5
-                                        style="text-align: center;"><a
-                                            href="https://restaurant-yleon.vercel.app/">Restaurants</a>
-                                    </h5>
-                                    <p class="card-text"
-                                        style="text-align: justify;">
-                                        Aplicación web para restaurantes con
-                                        enfoque visual y experiencia de usuario.
-                                        Presenta platillos mediante sliders de
-                                        alta calidad y navegación simple para
-                                        destacar la oferta gastronómica.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div>
-                            <div class="card text-center"> <img
-                                    class="card-img-top"
-                                    src="images/buenasPracticas.JPG"
-                                    alt>
-                                <div
-                                    class="card-body text-left pr-0 pl-0">
-                                    <h5 style="text-align: center;"><a
-                                            href="https://buenas-practicas-flax.vercel.app/">Buenas
-                                            Prácticas</a> </h5>
-                                    <p class="card-text"
-                                        style="text-align: justify;">
-                                        Guía visual e interactiva sobre buenas
-                                        prácticas en desarrollo frontend:
-                                        estructura de proyectos, componentes,
-                                        estilos, testing y documentación,
-                                        orientada a código limpio y escalable.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="card text-center"> <img
-                                    class="card-img-top"
-                                    src="images/talent.JPG"
-                                    alt>
-                                <div
-                                    class="card-body text-left pr-0 pl-0">
-                                    <h5 style="text-align: center;"><a
-                                            href="https://talent-track-orpin.vercel.app/">Talent
-                                            Track </a></h5>
-                                    <p class="card-text"
-                                        style="text-align: justify;">
-                                        CRM educativo para el seguimiento del
-                                        proceso de empleabilidad de estudiantes,
-                                        incluyendo gestión de CVs,
-                                        postulaciones, entrevistas y
-                                        acompañamiento con mentores.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="project-tag fe">Frontend</span>
+              <span class="project-tag fi">React + Vite</span>
+              <span class="project-tag ui">Material UI</span>
+              <span class="project-tag be">Redux Toolkit</span>
+              <span class="project-tag qa">Cypress</span>
             </div>
+            <div class="project-title">RuralApps — Plataforma Comercial</div>
+            <p class="project-desc">
+              Plataforma web comercial activa para comunicación entre
+              organizaciones
+              y ciudadanos en zonas rurales con señal 2G. Arquitectura de roles
+              jerárquica con 6 niveles de acceso.
+            </p>
+            <ul class="project-highlights">
+              <li>Berry Material UI con React 18, Redux Toolkit y React Router
+                7</li>
+              <li>Sistema de roles: Superusuario, Admin, Gestores y Usuario
+                final</li>
+              <li>Testing E2E automatizado con Cypress en flujos críticos por
+                rol</li>
+              <li>En producción activa — demo previa solicitud: +57 318
+                8097024</li>
+            </ul>
+            <div class="project-actions">
+              <a href="https://frontend-ruralapps-67779491282.us-east4.run.app/"
+                target="_blank" class="btn-sm primary">Ver Proyecto</a>
+              <button class="btn-sm" onclick="openVideoModal('ruralApps')">▶ Ver
+                Demo</button>
+            </div>
+          </div>
         </div>
 
-        <footer class="container-fluid fh5co-footer" id="contact">
-            <div class="form-box footer-form">
-                <div class="row">
-                    <div class="col-lg-5">
-                        <h2>CONTACTAME</h2>
-                        <p class="light">
-                            Ingeniera de Sistemas y Desarrolladora Frontend
-                        </p>
-                        <p>
-                            <span class="email"><img
-                                    src="images/email.png"
-                                    alt="email icon" /></span><b>yudithkleon@gmail.com</b>
-                        </p>
-                        <p>
-                            <a href="https://wa.me/573007706748"
-                                target="_blank"
-                                style="text-decoration: none; color: inherit;">
-                                <span class="phone">
-                                    <img src="images/phone.png"
-                                        alt="phone icon" />
-                                </span>
-                                <b>+57 300 7706748</b>
-                            </a>
-                        </p>
+        <!-- HOspeDATE -->
 
-                    </div>
-                    <div class="col-lg-7">
-                        <div class="form-box footer-form">
-                            <h4>¿De qué te gustaría hablar?</h4>
-                            <p>¡Me encantaría saber de usted!</p>
-                            <hr />
-
-                            <form id="contact-form">
-                                <div class="row g-3">
-                                    <div class="col-md-6">
-                                        <input
-                                            type="text"
-                                            name="name"
-                                            class="form-control"
-                                            placeholder="Asunto..." />
-                                    </div>
-
-                                    <div class="col-md-6">
-                                        <input
-                                            type="text"
-                                            name="to_email"
-                                            class="form-control"
-                                            value="yudithkleon@gmail.com"
-                                            readonly />
-                                    </div>
-
-                                    <div class="col-12">
-                                        <textarea
-                                            name="description"
-                                            class="form-control"
-                                            rows="4"
-                                            placeholder="Su mensaje, recuerde dejar sus datos de contacto"></textarea>
-                                    </div>
-
-                                    <div class="col-12">
-                                        <button type="submit">Enviar</button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-
-                </div>
+        <div class="project-card reveal" data-category="Backend">
+          <div class="project-thumb">
+            <img src="./helps/images/Hospedate.JPG" alt="Hospedate"
+              onerror="this.parentElement.innerHTML='🏨'">
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="project-tag fe">Frontend</span>
+              <span class="project-tag fi">JavaScript ES6</span>
+              <span class="project-tag be">Bootstrap 5</span>
+              <span class="project-tag qa">Backend</span>
+              <span class="project-tag fi">SweetAlert2</span>
+              <span class="project-tag ui">REST API</span>
             </div>
-
-        </footer>
-
-        <div class="footer-bottom">
-            <p>© 2025 yudithkleon@gmail.com</p>
-            <p>Código, arte y calma: creando conexiones y transformando ideas en
-                experiencias únicas.</p>
+            <div class="project-title">Hospedate — Sistema de Reservas</div>
+            <p class="project-desc">
+              Plataforma web de gestión hotelera con roles diferenciados:
+              usuario
+              autenticado para reservas y favoritos, y administrador para
+              gestión
+              completa de habitaciones, servicios y reservas. Integrada con
+              backend
+              Java + Spring Boot vía Fetch API.
+            </p>
+            <ul class="project-highlights">
+              <li>Autenticación con roles: acceso público, usuario y
+                administrador</li>
+              <li>CRUD completo de habitaciones, servicios y reservas desde el
+                panel admin</li>
+              <li>Historial y filtros de reservas por estado: activas,
+                canceladas y finalizadas</li>
+              <li>Consumo de API REST Spring Boot con Fetch API nativa — sin
+                dependencias extra</li>
+            </ul>
+            <div class="project-actions">
+              <a href="https://hospedate.vercel.app/"
+                target="_blank" class="btn-sm primary">Ver Proyecto</a>
+              <a href="https://github.com/yudithkleon/back-Hospedate.git"
+                target="_blank" class="btn-sm">Backend</a>
+              <a href="https://github.com/yudithkleon/Hospedate.git"
+                target="_blank" class="btn-sm">Frontend</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card reveal" data-category="Mentoría">
+          <div class="project-thumb">
+            <img src="./helps//images/restaurant.JPG" alt="Restaurant"
+              onerror="this.parentElement.innerHTML='🍽️'">
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="project-tag fe">Frontend</span>
+              <span class="project-tag be">JavaScript ES6</span>
+              <span class="project-tag qa">Bootstrap 5</span>
+              <span class="project-tag fi">Leaflet.js</span>
+            </div>
+            <div class="project-title">Restaurants</div>
+            <p class="project-desc">
+              Aplicación web con catálogo de platos, carrito de compras y mapa
+              interactivo
+              para registrar ubicaciones y generar rutas entre restaurantes en
+              Cali, Colombia.
+            </p>
+            <ul class="project-highlights">
+              <li>Carrito de compras con cálculo de total y registro de datos
+                del cliente</li>
+              <li>Mapa interactivo con Leaflet.js — marcadores, rutas y
+                persistencia con localStorage</li>
+              <li>Buscador dinámico de platos y catálogo con tarjetas generadas
+                desde JS</li>
+              <li>Panel admin autenticado con CRUD completo de platos — agregar,
+                editar y eliminar desde interfaz</li>
+            </ul>
+            <div class="project-actions">
+              <a href="https://restaurant-yleon.vercel.app/" target="_blank"
+                class="btn-sm primary">Ver Proyecto</a>
+              <a href="https://github.com/yudithkleon/restaurant.git"
+                target="_blank"
+                class="btn-sm">Ver Código</a>
+            </div>
+          </div>
         </div>
 
-        <script type="text/javascript"
-            src="https://cdn.emailjs.com/dist/email.min.js"></script>
-        <script src="js/jquery.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="owl-carousel/owl.carousel.min.js"></script>
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <div class="project-card reveal" data-category="Mentoría">
+          <div class="project-thumb">
+            <img src="./helps/images/talent.JPG" alt="Talent Track"
+              onerror="this.parentElement.innerHTML='🎓'">
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="project-tag">Mentoría</span>
+              <span class="project-tag fe">React + Vite</span>
+              <span class="project-tag">Redux Toolkit</span>
+              <span class="project-tag">Firebase</span>
+            </div>
+            <div class="project-title">TalentTrack — CRM de Empleabilidad</div>
+            <p class="project-desc">
+              CRM educativo con gestión de roles diferenciados: Administrador,
+              Mentor,
+              Estudiante y Empresa. Seguimiento completo del proceso de
+              empleabilidad:
+              postulaciones, entrevistas, agenda de reuniones y carga de CVs con
+              Firebase.
+            </p>
+            <ul class="project-highlights">
+              <li>5 roles funcionales: Admin, Mentor, Estudiante, Empresa e
+                Invitado</li>
+              <li>Dashboard personalizado por rol con métricas, agenda y
+                seguimiento</li>
+              <li>Autenticación, almacenamiento de CVs y portafolios con
+                Firebase</li>
+              <li>Redux Toolkit con slices por dominio: auth, students,
+                progress, meetings</li>
+            </ul>
+            <div class="project-actions">
+              <a href="https://talent-track-orpin.vercel.app/" target="_blank"
+                class="btn-sm primary">Ver Proyecto</a>
+              <a href="https://github.com/yudithkleon" target="_blank"
+                class="btn-sm">Ver Código</a>
+            </div>
+          </div>
+        </div>
 
-        <script src="./js/main.js"></script>
-    </body>
+        <div class="project-card reveal" data-category="Frontend">
+          <div class="project-thumb">
+            <img src="./helps/images/TOGAF.png" alt="TOGAF"
+              onerror="this.parentElement.innerHTML='🏗️'">
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="project-tag fe">Arquitectura</span>
+              <span class="project-tag">TOGAF 9.2</span>
+              <span class="project-tag">Enterprise Architect 13</span>
+              <span class="project-tag">UML + BPMN</span>
+            </div>
+            <div class="project-title">Proyecto de Grado — Modelado ADM TOGAF
+              9.2</div>
+            <p class="project-desc">
+              Proyecto de grado: modelado de arquitectura empresarial aplicando
+              el método BMM
+              sobre las fases E, F, G, H y Gestión de Requisitos del estándar
+              ADM-TOGAF 9.2,
+              visualizado como aplicación web interactiva.
+            </p>
+            <ul class="project-highlights">
+              <li>Análisis e interpretación completa de las fases ADM:
+                Oportunidades, Soluciones, Planificación, Gobierno y
+                Requisitos</li>
+              <li>Diagramas UML y BPMN modelados en Enterprise Architect 13 y
+                exportados a HTML navegable</li>
+              <li>Aplicación del método BMM para alinear motivación de negocio
+                con arquitectura técnica</li>
+            </ul>
+            <div class="project-actions">
+              <a href="https://bmm-modelado-adm-togaf-yudithleon.netlify.app/"
+                target="_blank" class="btn-sm primary">Ver Proyecto</a>
+              <a href="https://github.com/leonyudithk/BMM-ADM-TOGAF"
+                target="_blank" class="btn-sm">Ver Código</a>
+            </div>
 
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ─── PRINCIPIOS DE INGENIERÍA ─────────────────────────── -->
+    <section class="section video-section reveal" id="mentoria">
+      <div class="section-header reveal">
+        <h2>✦ Principios de <span class="accent">Ingeniería</span> ✦</h2>
+      </div>
+      <p class="principles-subtitle reveal">Guiando a más de
+        200 estudiantes en desarrollo web.</p>
+      <div class="principles-tags reveal">
+        <div class="principle-tag"><div class="icon html">🌐</div> HTML
+          Semántico</div>
+        <div class="principle-tag"><div class="icon css">🎨</div> CSS
+          Moderno</div>
+        <div class="principle-tag"><div class="icon js">⚡</div> JavaScript</div>
+        <div class="principle-tag"><div class="icon react">⚛️</div> React</div>
+        <div class="principle-tag"><div class="icon git">🔀</div> Git &
+          GitHub</div>
+        <div class="principle-tag"><div class="icon test">✅</div> Testing</div>
+
+        <!-- Nuevos -->
+        <div class="principle-tag"><div class="icon zustand">🐻</div>
+          Zustand</div>
+        <div class="principle-tag"><div class="icon jest">🃏</div> Jest</div>
+        <div class="principle-tag"><div class="icon redux">🔄</div> Redux</div>
+        <div class="principle-tag"><div class="icon redux">🧰</div> Redux
+          Toolkit</div>
+        <div class="principle-tag"><div class="icon bootstrap">🅱️</div>
+          Bootstrap</div>
+        <div class="principle-tag"><div class="icon mui">🎨</div> Material
+          UI</div>
+        <div class="principle-tag"><div class="icon tailwind">💨</div> Tailwind
+          CSS</div>
+        <div class="principle-tag"><div class="icon firebase">🔥</div>
+          Firebase</div>
+      </div>
+    </section>
+
+    <!-- ─── HABILIDADES TÉCNICAS ──────────────────────────────── -->
+    <section class="section skills-section">
+      <div class="section-header reveal">
+        <h2>✦ Habilidades <span class="accent">Técnicas</span> ✦</h2>
+      </div>
+      <div class="skills-grid reveal">
+
+        <!-- Frontend & State -->
+        <div class="skill-card">
+          <div class="skill-header fe">⚛️ Frontend & State</div>
+          <div class="skill-body">
+            <div class="skill-item"><span class="skill-dot"></span>React +
+              TypeScript</div>
+            <div class="skill-item"><span class="skill-dot"></span>Redux
+              Toolkit</div>
+            <div class="skill-item"><span class="skill-dot"></span>Redux
+              Saga</div>
+            <div class="skill-item"><span class="skill-dot"></span>Zustand</div>
+            <div class="skill-item"><span class="skill-dot"></span>React
+              Query</div>
+          </div>
+        </div>
+
+        <!-- UI & Styling -->
+        <div class="skill-card">
+          <div class="skill-header ui">🎨 UI & Styling</div>
+          <div class="skill-body">
+            <div class="skill-item"><span class="skill-dot"></span>Tailwind
+              CSS</div>
+            <div class="skill-item"><span class="skill-dot"></span>Material
+              UI</div>
+            <div class="skill-item"><span
+                class="skill-dot"></span>Bootstrap</div>
+            <div class="skill-item"><span class="skill-dot"></span>Ant
+              Design</div>
+            <div class="skill-item"><span class="skill-dot"></span>Styled
+              Components</div>
+            <div class="skill-item"><span class="skill-dot"></span>Sass</div>
+          </div>
+        </div>
+
+        <!-- Backend & Bases de datos -->
+        <div class="skill-card">
+          <div class="skill-header be">☕ Backend & Bases de datos</div>
+          <div class="skill-body">
+            <div class="skill-item"><span class="skill-dot"></span>Java + Spring
+              Boot</div>
+            <div class="skill-item"><span class="skill-dot"></span>REST
+              APIs</div>
+            <div class="skill-item"><span class="skill-dot"></span>MySQL</div>
+            <div class="skill-item"><span
+                class="skill-dot"></span>Firebase</div>
+            <div class="skill-item"><span class="skill-dot"></span>PHP</div>
+          </div>
+        </div>
+
+        <!-- Testing & QA -->
+        <div class="skill-card">
+          <div class="skill-header qa">🧪 Testing & QA</div>
+          <div class="skill-body">
+            <div class="skill-item"><span class="skill-dot"></span>Cypress
+              E2E</div>
+            <div class="skill-item"><span class="skill-dot"></span>Jest +
+              Vitest</div>
+            <div class="skill-item"><span class="skill-dot"></span>React Testing
+              Library</div>
+            <div class="skill-item"><span class="skill-dot"></span>Mocha +
+              Chai</div>
+          </div>
+        </div>
+
+        <!-- Arquitectura & Diseño -->
+        <div class="skill-card">
+          <div class="skill-header arc">🏗️ Arquitectura & Diseño</div>
+          <div class="skill-body">
+            <div class="skill-item"><span class="skill-dot"></span>TOGAF
+              9.2</div>
+            <div class="skill-item"><span class="skill-dot"></span>UML +
+              BPMN</div>
+            <div class="skill-item"><span class="skill-dot"></span>Enterprise
+              Architect</div>
+            <div class="skill-item"><span class="skill-dot"></span>Figma</div>
+            <div class="skill-item"><span class="skill-dot"></span>Design
+              Thinking</div>
+          </div>
+        </div>
+
+        <!-- Cloud, Tools & Metodologías -->
+        <div class="skill-card">
+          <div class="skill-header cloud">☁️ Cloud, Tools & Gestión</div>
+          <div class="skill-body">
+            <div class="skill-item"><span class="skill-dot"></span>Azure</div>
+            <div class="skill-item"><span class="skill-dot"></span>Git &
+              GitHub</div>
+            <div class="skill-item"><span class="skill-dot"></span>Scrum &
+              Agile</div>
+            <div class="skill-item"><span class="skill-dot"></span>Trello &
+              Kanban</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ─── VIDEO ────────────────────────────────────────────── -->
+    <!-- <div class="video-section reveal">
+      <h2>Video de Presentación</h2>
+      <p>Mi experiencia como desarrolladora Full Stack, arquitectura frontend,
+        testing y cómo aporto valor en equipos ágiles.</p>
+      <div class="video-wrap">
+        <iframe
+          src="https://www.youtube.com/embed/rrHS3wwFkqM"
+          loading="lazy"
+          title="Video presentación"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div> -->
+
+    <!-- ─── SOBRE MÍ ──────────────────────────────────────────── -->
+    <section class="section about-section" id="about">
+      <div class="section-header reveal">
+        <h2>Sobre <span class="accent">Mí</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>Ingeniera de Sistemas y Desarrolladora Full Stack con enfoque
+            Frontend, <strong>4+ años</strong> creando aplicaciones web
+            modernas, escalables y orientadas a experiencia de usuario.</p>
+          <p>Especialista en <strong>React y TypeScript</strong>, con gestión de
+            estado en Redux Toolkit, Zustand y React Query. Enfoque en
+            performance, arquitectura modular y buenas prácticas.</p>
+          <p>Backend con <strong>Java y Spring Boot</strong>, integración de
+            APIs REST y trabajo con MySQL y Firebase. QA con Cypress, Jest y
+            Vitest; gestión ágil en Azure Boards.</p>
+          <p><strong>Mentora Técnica:</strong> formación en React, Git, consumo
+            de APIs y testing en proyectos reales con más de 200 estudiantes
+            formados.</p>
+          <div class="about-cta">
+            <a href="./images/FullStack Yudith Leon.pdf" target="_blank"
+              class="btn-primary" download>Ver / Descargar CV</a>
+          </div>
+        </div>
+        <div class="about-visual reveal">
+          <div class="about-stat-card">
+            <div class="about-stat-num">200+</div>
+            <div class="about-stat-label">Estudiantes formados en React y
+              desarrollo web moderno</div>
+          </div>
+          <div class="about-stat-card">
+            <div class="about-stat-num">4+</div>
+            <div class="about-stat-label">Años de experiencia</div>
+          </div>
+          <div class="about-stat-card">
+            <div class="about-stat-num">40+</div>
+            <div class="about-stat-label">Proyectos guiados</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── TESTIMONIAL ───────────────────────────────────────── -->
+    <section class="section testimonial-section ">
+      <div class="section-header reveal">
+        <h2>Lo que dicen quienes <span class="accent">me conocen</span></h2>
+        <p>Recomendaciones de supervisores directos en proyectos reales</p>
+      </div>
+
+      <div class="testimonials-grid">
+
+        <!-- Testimonio 1 -->
+        <div class="testimonial-card reveal">
+          <p class="testimonial-text">
+            "Profesional con conocimientos y habilidades técnicas de
+            programación
+            <strong>excepcionales</strong>, comprometida con el logro de los
+            resultados
+            dentro de los plazos establecidos. Es una persona confiable, leal,
+            resiliente
+            y dispuesta a aportar <strong>soluciones innovadoras</strong> y
+            asumir
+            compromisos que están más allá de sus deberes."
+          </p>
+          <div class="testimonial-author">
+            <div class="author-avatar">EA</div>
+            <div>
+              <div class="author-name">Edgar A. Rodríguez M.</div>
+              <div class="author-role">Executive Director & Cofounder — Agile
+                Innova</div>
+              <div class="author-relation">Supervisor directo · Mayo 2025</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonio 2 -->
+        <div class="testimonial-card reveal">
+          <p class="testimonial-text">
+            "Además de tener <strong>excelentes habilidades técnicas</strong>,
+            Yudith
+            es un ser humano maravilloso. Ha hecho parte y liderado equipos de
+            desarrollo
+            en <strong>proyectos de alta exigencia con clientes a nivel nacional
+              e
+              internacional</strong>. Su increíble carisma, empatía y capacidad
+            de
+            relacionamiento hacen que sea un lujo contar con ella en un equipo."
+          </p>
+          <div class="testimonial-author">
+            <div class="author-avatar">LA</div>
+            <div>
+              <div class="author-name">Libardo A. Castellanos S.</div>
+              <div class="author-role">Director - Agile Innova</div>
+              <div class="author-relation">Supervisor directo · Abril 2025</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ─── CONTACTO ─────────────────────────────────────────── -->
+    <section class="section contact-section" id="contact">
+      <div class="section-header reveal">
+        <h2>Contáct<span class="accent">ame</span></h2>
+        <p>¿Tienes un proyecto o una oportunidad? Me encantaría saber de ti.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="reveal">
+          <h3>Hablemos</h3>
+          <p>Abierta a oportunidades como Frontend / Full Stack Developer o
+            Mentora Técnica.</p>
+          <div class="contact-detail">
+            <div class="contact-icon">✉️</div>
+            <a href="mailto:yudithkleon@gmail.com">yudithkleon@gmail.com</a>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-icon">📱</div>
+            <a href="https://wa.me/573007706748" target="_blank">+57 300
+              7706748</a>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-icon"><i class="fab fa-github"></i></div>
+            <a href="https://github.com/yudithkleon"
+              target="_blank">github.com/yudithkleon</a>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
+            <a href="https://www.linkedin.com/in/yudithkleon/"
+              target="_blank">linkedin.com/in/yudithkleon</a>
+          </div>
+        </div>
+        <form class="contact-form reveal" id="contact-form">
+          <div class="form-group">
+            <label class="form-label">Asunto</label>
+            <input type="text" name="name" class="form-input"
+              placeholder="¿De qué te gustaría hablar?" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Tu mensaje</label>
+            <textarea name="description" class="form-textarea"
+              placeholder="Cuéntame tu proyecto o propuesta..."
+              required></textarea>
+          </div>
+          <button type="submit" class="btn-submit">Enviar mensaje ✦</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- ─── FOOTER ───────────────────────────────────────────── -->
+    <footer>
+      <p>© 2025 <em>Yudith León</em> — yudithkleon@gmail.com</p>
+      <p>Código, arte y calma: creando conexiones y transformando ideas en
+        experiencias únicas.</p>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
 </html>
